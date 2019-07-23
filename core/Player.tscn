@@ -24,7 +24,7 @@ playback_process_mode = 0
 [node name="Label" type="Label" parent="."]
 margin_right = 40.0
 margin_bottom = 14.0
-text = "TEXT_EP1_1"
+text = "TEST_TEXT"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true

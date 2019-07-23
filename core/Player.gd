@@ -21,6 +21,7 @@ func get_input():
 			direction.y += step
 		if Input.is_action_pressed('ui_up'):
 			direction.y -= step
+			is_hitting_wall(Vector2(0,-step))
 		#direction = direction.normalized() * speed
 		$Tween.interpolate_property(root,"position",root.position,root.position+direction,10.0/speed,Tween.TRANS_LINEAR,Tween.EASE_IN)
 		$Tween.start()
@@ -29,7 +30,6 @@ func _physics_process(delta):
 	get_input()
 	
 func is_hitting_wall(direction):
-	pass
-	#$Pivot.
+	$Label.rect_position+=direction
 func _on_Tween_tween_completed(object, key):
 	moving=false

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://util/Dialog.gd" type="Script" id=1]
+[ext_resource path="res://tilesets/testground.png" type="Texture" id=2]
 
 [node name="Dialog" type="CanvasLayer"]
 pause_mode = 2
@@ -20,35 +21,36 @@ text = "En proceso"
 [node name="SlideDown" type="Tween" parent="."]
 
 [node name="Panel" type="Sprite" parent="."]
-position = Vector2( 517.749, 505.429 )
-scale = Vector2( 2, 2 )
+position = Vector2( 417.249, 489.929 )
+scale = Vector2( 5.247, 2.42029 )
+texture = ExtResource( 2 )
 region_enabled = true
-region_rect = Rect2( 46, 115.038, 292, 64 )
+region_rect = Rect2( -3, -4, 82, 69 )
 
-[node name="Dialog" type="RichTextLabel" parent="Panel"]
-margin_left = -88.0
-margin_top = -18.0
-margin_right = 108.0
-margin_bottom = 19.0
+[node name="Dialog" type="RichTextLabel" parent="."]
+margin_left = 341.749
+margin_top = 469.429
+margin_right = 537.749
+margin_bottom = 506.429
 text = "test"
 
-[node name="SlowText" type="Timer" parent="Panel"]
+[node name="SlowText" type="Timer" parent="."]
 wait_time = 0.04
 autostart = true
 
-[node name="Nombre" type="Label" parent="Panel"]
-margin_left = -140.917
-margin_top = -40.8997
-margin_right = 71.083
-margin_bottom = -22.8997
+[node name="Nombre" type="Label" parent="."]
+margin_left = 235.915
+margin_top = 423.63
+margin_right = 447.915
+margin_bottom = 441.63
 custom_colors/font_color_shadow = Color( 0.65098, 0.341176, 0.694118, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 text = "nombre"
 
-[node name="Status" type="Label" parent="Panel"]
-margin_left = 83.3003
-margin_top = 13.28
-margin_right = 123.3
-margin_bottom = 43.28
-[connection signal="timeout" from="Panel/SlowText" to="." method="sentence_builder"]
+[node name="Status" type="Label" parent="."]
+margin_left = 684.35
+margin_top = 531.989
+margin_right = 724.349
+margin_bottom = 561.989
+[connection signal="timeout" from="SlowText" to="." method="sentence_builder"]
