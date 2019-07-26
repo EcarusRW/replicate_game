@@ -28,10 +28,10 @@ region_enabled = true
 region_rect = Rect2( -3, -4, 82, 69 )
 
 [node name="Dialog" type="RichTextLabel" parent="."]
-margin_left = 341.749
-margin_top = 469.429
-margin_right = 537.749
-margin_bottom = 506.429
+margin_left = 269.0
+margin_top = 453.0
+margin_right = 617.0
+margin_bottom = 562.0
 text = "test"
 
 [node name="SlowText" type="Timer" parent="."]
