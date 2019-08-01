@@ -1,2 +1,7 @@
 ,en,es
-TEST_TEXT,Testing with godot,Probando con Godot
+EMPTY_DIALOG,Placeholder text,Texto de prueba
+DIALOG_1,Testing with godotTesting with godotTesting with godotTesting with godot,
+DIALOG_2,,
+DIALOG_3,,
+DIALOG_4,,
+DIALOG_5,,
