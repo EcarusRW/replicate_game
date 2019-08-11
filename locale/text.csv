@@ -1,7 +1,7 @@
 ,en,es
 EMPTY_DIALOG,Placeholder text,Texto de prueba
-DIALOG_1,Testing with godotTesting with godotTesting with godotTesting with godot,
-DIALOG_2,,
-DIALOG_3,,
-DIALOG_4,,
+DIALOG_1,Testing with godotTesting with godotTesting with godotTesting with godot,"Hola, esto es una prueba"
+DIALOG_2,,Pasando por distintos textos
+DIALOG_3,,"Viendo como se ajustan los textos mas grandes, sin retorno de linea, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum"
+DIALOG_4,,Ultimo texto :)
 DIALOG_5,,
