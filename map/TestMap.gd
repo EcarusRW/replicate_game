@@ -14,9 +14,9 @@ func _ready():
 
 func hitting_wall(player,direction):
 	var target_cell=world_to_map(player.position)+direction
-	var obstacle=get_cellv(target_cell)
-	#print(obstacle," ",target_cell)
-	if obstacle == 1:
+	var next_cell=get_cellv(target_cell)
+	print(self.tile_set.tile_get_name(next_cell)," ",target_cell)
+	if next_cell == 1:
 		return true
 	else:
 		return false
